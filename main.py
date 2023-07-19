@@ -28,8 +28,8 @@ def encode(password):
 def decode(new_password):  
     original_password = ''
     for x in range(0, len(new_password)):
-            original_number = (int(new_password[x]) - 3 ) % 10
-            original_password += str(original_number)
+            original_number = str((int(new_password[x]) - 3 ) % 10)
+            original_password += original_number
     return original_password
 
 
