@@ -25,7 +25,7 @@ def encode(password):
         new_password += str(new_num)  # Int to string, and added to end of string
     return new_password
 
-def decode(new_password): 
+def decode(new_password):  
     original_password = ''
     for x in new_password[0:8]:
         if int(x) <= 9:
