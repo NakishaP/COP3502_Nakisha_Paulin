@@ -27,7 +27,7 @@ def encode(password):
 
 def decode(new_password):  
     original_password = ''
-    for num in new_password:
+    for num in range(len(new_password)):
             original_number = str((int(new_password[num]) - 3 ) % 10)
             original_password += original_number
     return original_password
