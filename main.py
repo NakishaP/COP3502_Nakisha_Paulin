@@ -26,7 +26,14 @@ def encode(password):
     return new_password
 
 def decode(new_password): 
-    pass
+    original_password = ''
+    for x in new_password[0:8]:
+        if int(x) <= 9:
+            original_number = chr(ord(x)-3)
+            original_password += original_number
+        else:
+            break
+    return original_password
 
 
 if __name__ == '__main__':
